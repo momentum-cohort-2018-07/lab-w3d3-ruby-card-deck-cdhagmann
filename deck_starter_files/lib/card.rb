@@ -8,10 +8,10 @@ class Card
     @suit = suit
   end
 
-  def greater_than? (card)
+  def greater_than?(card)
     order = [:A, 2, 3, 4, 5, 6, 7, 8, 9, 10, :J, :Q, :K]
-    order.index(card.rank) < order.index(@rank)
-   end 
+    order.index(@rank) > order.index(card.rank) 
+  end 
 
   def ==(another_card)
     self.suit == another_card.suit &&
