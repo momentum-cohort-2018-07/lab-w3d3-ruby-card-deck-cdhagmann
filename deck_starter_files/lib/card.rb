@@ -1,5 +1,4 @@
 class Card
-
   attr_reader :rank
   attr_reader :suit
 
@@ -17,5 +16,4 @@ class Card
     self.suit == another_card.suit &&
     self.rank == another_card.rank
   end
-
 end
