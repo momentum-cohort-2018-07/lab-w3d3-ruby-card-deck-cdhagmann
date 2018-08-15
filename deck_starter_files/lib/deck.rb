@@ -10,10 +10,7 @@ class Deck
       end
     end
   end
-
-  def deck
-    @deck
-  end  
+ 
   def cards_left
     @deck.length
   end
